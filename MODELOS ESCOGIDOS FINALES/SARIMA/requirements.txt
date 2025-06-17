@@ -1,0 +1,11 @@
+protobuf==3.20.3
+streamlit==1.22.0
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+scikit-learn
+plotly
+openpyxl
+xlrd
