@@ -1,0 +1,24 @@
+MÉTRICAS DE EVALUACIÓN DE ERRORES
+
+R² – Coeficiente de determinación
+	0≤R^2≤1
+	Valor de R²	Evaluación
+	0.90 – 1.00	Excelente ajuste
+	0.75 – 0.89	Bueno
+	0.50 – 0.74	Aceptable
+	< 0.50	Pobre ajuste (modelo débil
+
+MSE – Error Cuadrático Medio
+	MSE= 1/n i=1∑n(yi−y^i)^2
+	Un valor cercano a 0 indica buen rendimiento
+	Si el MSE es menor que la varianza, el modelo es razonablemente bueno
+
+MAE – Error Absoluto Medio
+	MAE= 1/n i=1∑n∣yi−y^i∣
+	Un MAE bajo indica predicciones precisas
+	MAE < 5% del valor promedio real = muy bueno
+	MAE < 10% = aceptable
+
+RMSE – Raíz del Error Cuadrático Medio
+	RMSE= Raíz Cuadrada de MSE
+	RMSE ≈ MAE
