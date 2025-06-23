@@ -3,7 +3,7 @@ import pandas as pd
 
 # Parámetros iniciales
 np.random.seed(42)
-n = 365 * 4  # Días de observación (4 años)
+n = 180  # Días de observación
 t = np.arange(1, n + 1)  # Días normales
 
 # Factores ambientales dentro de rangos realistas
@@ -19,15 +19,15 @@ C = np.clip(C_0 + 0.3 * t + np.random.normal(0, 5, size=n), 250, 400)
 pH = np.clip(pH_0 - 0.002 * t + np.random.normal(0, 0.05, size=n), 6.8, 8.2)
 
 # Parámetros de Von Bertalanffy ajustados
-Linf = 80  # Longitud máxima teórica en cm para trucha arco iris
+Linf = 75  # Longitud máxima teórica en cm para trucha arco iris
 t0 = -0.5  # Día teórico inicial
-k_base = 0.05  # Ajustar k en función de condiciones ambientales
-k = np.clip(k_base + 0.002 * (T - 25) + 0.002 * (O_2 - 7) - 0.0003 * (C - 300) + 0.003 * (pH - 7.5), 0.01, 0.1)
+k_base = 0.02  # Ajustar k en función de condiciones ambientales
+k = np.clip(k_base + 0.002 * (T - 25) + 0.002 * (O_2 - 7) - 0.0003 * (C - 300) + 0.003 * (pH - 7.5), 0.01, 0.05)
 
 # Modelo de crecimiento
 L = Linf * (1 - np.exp(-k * (t - t0))) + np.random.normal(0, 1, size=n)
 
-# Asegurar crecimiento progresivo sin valores negativos y no sobrepasar los 80 cm
+# Asegurar crecimiento progresivo sin valores negativos y no sobrepasar los 75 cm
 L = np.minimum(np.maximum.accumulate(L), Linf)
 
 # Crear DataFrame
@@ -42,6 +42,6 @@ datos_temporales = pd.DataFrame({
 })
 
 # Guardar datos
-datos_temporales.to_excel('datos_80cm.xlsx', index=False)
+datos_temporales.to_excel('Dataset_Truchas_180_dias.xlsx', index=False)
 
 print(datos_temporales.head())

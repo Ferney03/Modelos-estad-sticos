@@ -3,7 +3,7 @@ import pandas as pd
 
 # Parámetros fijos
 np.random.seed(42)
-dias_simulacion = 120  # Puedes cambiar esto
+dias_simulacion = 120
 t = np.arange(1, dias_simulacion + 1)
 
 # Límites biológicos
@@ -25,7 +25,6 @@ def tasa_crecimiento(temp, hum, ph):
 
 k = np.clip([tasa_crecimiento(temp, hum, ph_val) for temp, hum, ph_val in zip(temperatura, humedad, ph)], 0.02, 0.15)
 
-# Modelo logístico para altura
 t0 = 30  # Punto de inflexión (día más rápido de crecimiento)
 altura = altura_max / (1 + np.exp(-np.array(k) * (t - t0)))
 
@@ -50,7 +49,7 @@ simulacion_lechuga = pd.DataFrame({
 })
 
 # Guardar resultados
-simulacion_lechuga.to_excel('simulacion_lechuga_realista.xlsx', index=False)
+simulacion_lechuga.to_excel('Dataset_Lechugas_120_dias.xlsx', index=False)
 
 # Mostrar primeras filas
 print(simulacion_lechuga.head(10))
