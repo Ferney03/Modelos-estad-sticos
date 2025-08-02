@@ -1,0 +1,80 @@
+
+============= ANÁLISIS DE ESTACIONARIEDAD =============
+Test Dickey-Fuller aumentado: P-VALOR = 0.000002
+La serie es estacionaria (p < 0.05)
+
+========== BÚSQUEDA DEL MEJOR MODELO SARIMA ==========
+Performing stepwise search to minimize aic
+ ARIMA(0,0,0)(1,0,1)[12] intercept   : AIC=inf, Time=1.17 sec
+ ARIMA(0,0,0)(0,0,0)[12] intercept   : AIC=1534.438, Time=0.02 sec
+ ARIMA(1,0,0)(1,0,0)[12] intercept   : AIC=inf, Time=0.53 sec
+ ARIMA(0,0,1)(0,0,1)[12] intercept   : AIC=inf, Time=0.66 sec
+ ARIMA(0,0,0)(0,0,0)[12]             : AIC=1959.835, Time=0.02 sec
+ ARIMA(0,0,0)(1,0,0)[12] intercept   : AIC=inf, Time=0.53 sec
+ ARIMA(0,0,0)(0,0,1)[12] intercept   : AIC=inf, Time=0.49 sec
+ ARIMA(1,0,0)(0,0,0)[12] intercept   : AIC=inf, Time=0.25 sec
+ ARIMA(0,0,1)(0,0,0)[12] intercept   : AIC=inf, Time=0.21 sec
+ ARIMA(1,0,1)(0,0,0)[12] intercept   : AIC=507.747, Time=0.30 sec
+ ARIMA(1,0,1)(1,0,0)[12] intercept   : AIC=479.452, Time=0.81 sec
+ ARIMA(1,0,1)(2,0,0)[12] intercept   : AIC=481.283, Time=1.53 sec
+ ARIMA(1,0,1)(1,0,1)[12] intercept   : AIC=481.226, Time=1.16 sec
+ ARIMA(1,0,1)(0,0,1)[12] intercept   : AIC=483.040, Time=0.78 sec
+ ARIMA(1,0,1)(2,0,1)[12] intercept   : AIC=483.015, Time=2.66 sec
+ ARIMA(0,0,1)(1,0,0)[12] intercept   : AIC=inf, Time=0.73 sec
+ ARIMA(2,0,1)(1,0,0)[12] intercept   : AIC=inf, Time=1.34 sec
+ ARIMA(1,0,2)(1,0,0)[12] intercept   : AIC=481.255, Time=1.02 sec
+ ARIMA(0,0,2)(1,0,0)[12] intercept   : AIC=904.255, Time=1.37 sec
+ ARIMA(2,0,0)(1,0,0)[12] intercept   : AIC=inf, Time=1.05 sec
+ ARIMA(2,0,2)(1,0,0)[12] intercept   : AIC=inf, Time=1.55 sec
+ ARIMA(1,0,1)(1,0,0)[12]             : AIC=478.013, Time=0.65 sec
+ ARIMA(1,0,1)(0,0,0)[12]             : AIC=506.580, Time=0.22 sec
+ ARIMA(1,0,1)(2,0,0)[12]             : AIC=479.780, Time=1.21 sec
+ ARIMA(1,0,1)(1,0,1)[12]             : AIC=479.685, Time=1.06 sec
+ ARIMA(1,0,1)(0,0,1)[12]             : AIC=481.773, Time=0.75 sec
+ ARIMA(1,0,1)(2,0,1)[12]             : AIC=481.345, Time=2.37 sec
+ ARIMA(0,0,1)(1,0,0)[12]             : AIC=inf, Time=0.69 sec
+ ARIMA(1,0,0)(1,0,0)[12]             : AIC=inf, Time=0.44 sec
+ ARIMA(2,0,1)(1,0,0)[12]             : AIC=inf, Time=1.35 sec
+ ARIMA(1,0,2)(1,0,0)[12]             : AIC=479.827, Time=0.80 sec
+ ARIMA(0,0,0)(1,0,0)[12]             : AIC=inf, Time=0.17 sec
+ ARIMA(0,0,2)(1,0,0)[12]             : AIC=inf, Time=1.40 sec
+ ARIMA(2,0,0)(1,0,0)[12]             : AIC=inf, Time=0.75 sec
+ ARIMA(2,0,2)(1,0,0)[12]             : AIC=inf, Time=1.28 sec
+
+Best model:  ARIMA(1,0,1)(1,0,0)[12]          
+Total fit time: 31.344 seconds
+
+Ajustando modelo SARIMA(1, 0, 1)(1, 0, 0, 12) en statsmodels para obtener p-valores...
+
+=============== P-VALORES DEL MODELO ===============
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          1.0029      0.003    290.708      0.000       0.996       1.010
+ma.L1         -0.0447      0.075     -0.599      0.549      -0.191       0.102
+ar.S.L12       0.3721      0.035     10.603      0.000       0.303       0.441
+sigma2         0.6446      0.043     14.942      0.000       0.560       0.729
+==============================================================================
+===========================================================
+
+
+============= RESUMEN DEL MODELO SELECCIONADO =============
+Modelo seleccionado:  ARIMA(1,0,1)(1,0,0)[12]          
+Orden SARIMA: (1, 0, 1) (p,d,q), Estacional: (1, 0, 0, 12) (P,D,Q,s)
+
+P-valores de los parámetros del modelo:
+P-VALORES DE LOS PARÁMETROS:
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+ar.L1          1.0029      0.003    290.708      0.000       0.996       1.010 *** SIGNIFICATIVO ***
+ma.L1         -0.0447      0.075     -0.599      0.549      -0.191       0.102 (no significativo)
+ar.S.L12       0.3721      0.035     10.603      0.000       0.303       0.441 *** SIGNIFICATIVO ***
+sigma2         0.6446      0.043     14.942      0.000       0.560       0.729 *** SIGNIFICATIVO ***
+==============================================================================
+
+Resumen: 3 de 4 parámetros son estadísticamente significativos (p < 0.05).
+
+===========================================================
+
+
+Analizando residuos del modelo...
