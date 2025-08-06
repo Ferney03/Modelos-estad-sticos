@@ -1,0 +1,61 @@
+Tipo,Archivo,Columna,Minimo,Maximo,Promedio,Total_Datos
+Global,TODOS,Temperature (C),-127.0,30.5,24.86542886952309,326119
+Global,TODOS,Turbidity(NTU),-57.0,100.0,67.0379423840696,655652
+Global,TODOS,Dissolved Oxygen(g/ml),0.007,44.98,10.324005685742852,757157
+Global,TODOS,PH,-3.13745,16.23077,5.7771941465246925,1107513
+Global,TODOS,Ammonia(g/ml),0.0,inf,inf,756853
+Global,TODOS,Nitrate(g/ml),0.0,3870.0,670.6249826654181,757157
+Global,TODOS,Population,50.0,75.0,57.37946474465144,612829
+Global,TODOS,Fish_Length(cm),6.74,48.69,16.925651105027224,433202
+Global,TODOS,Fish_Weight(g),2.91,826.0,59.20443413365097,433203
+Por_Archivo,IoTpond1.csv,Temperature (C),-127.0,27.75,24.573375809012823,83126
+Por_Archivo,IoTpond1.csv,Turbidity(NTU),1.0,100.0,87.490159516878,83126
+Por_Archivo,IoTpond1.csv,Dissolved Oxygen(g/ml),0.007,41.046,12.390250775930516,83126
+Por_Archivo,IoTpond1.csv,PH,-0.58627,8.55167,7.5183291853331085,83126
+Por_Archivo,IoTpond1.csv,Ammonia(g/ml),0.00677,427000000000.0,203081663.96664742,83074
+Por_Archivo,IoTpond1.csv,Nitrate(g/ml),45.0,1936.0,458.29440848831894,83126
+Por_Archivo,IoTpond1.csv,Population,50.0,50.0,50.0,83126
+Por_Archivo,IoTpond1.csv,Fish_Length(cm),7.11,33.45,16.414686492469084,83124
+Por_Archivo,IoTpond1.csv,Fish_Weight(g),2.91,318.64,44.568469635724945,83124
+Por_Archivo,IoTPond10.csv,Population,50.0,50.0,50.0,620
+Por_Archivo,IoTPond11.csv,Population,50.0,50.0,50.0,3165
+Por_Archivo,IoTPond12.csv,Population,50.0,50.0,50.0,3590
+Por_Archivo,IoTPond2.csv,Temperature (C),-127.0,27.8125,24.982848594186322,172249
+Por_Archivo,IoTPond2.csv,Dissolved Oxygen(g/ml),0.007,41.046,9.708502638621994,172249
+Por_Archivo,IoTPond2.csv,PH,-3.13745,8.55167,3.9718573087216758,172249
+Por_Archivo,IoTPond2.csv,Ammonia(g/ml),0.00659,996512956416.0,311210983.1725849,172159
+Por_Archivo,IoTPond2.csv,Nitrate(g/ml),45.0,2224.0,719.8914478458511,172249
+Por_Archivo,IoTPond2.csv,Population,50.0,50.0,50.0,172249
+Por_Archivo,IoTPond3.csv,Turbidity(NTU),8.0,100.0,83.38489818837367,169185
+Por_Archivo,IoTPond3.csv,Dissolved Oxygen(g/ml),0.008,41.384,7.456180589295743,169185
+Por_Archivo,IoTPond3.csv,PH,-0.5318,11.45693,7.184930716789313,169185
+Por_Archivo,IoTPond3.csv,Ammonia(g/ml),0.0,inf,inf,169078
+Por_Archivo,IoTPond3.csv,Nitrate(g/ml),0.0,3870.0,380.670804149304,169185
+Por_Archivo,IoTPond3.csv,Population,50.0,50.0,50.0,169185
+Por_Archivo,IoTPond3.csv,Fish_Length(cm),6.74,33.0,16.058792859887106,169185
+Por_Archivo,IoTPond3.csv,Fish_Weight(g),3.2,294.92,44.259005999349824,169185
+Por_Archivo,IoTPond4.csv,Turbidity(NTU),80.0,100.0,96.47604040224061,89797
+Por_Archivo,IoTPond4.csv,Dissolved Oxygen(g/ml),0.007,41.118,8.046123244651826,89797
+Por_Archivo,IoTPond4.csv,PH,-0.99028,15.45166,7.734694061716985,89797
+Por_Archivo,IoTPond4.csv,Ammonia(g/ml),1e-05,inf,inf,89742
+Por_Archivo,IoTPond4.csv,Nitrate(g/ml),215.0,3455.0,1227.1562190273617,89797
+Por_Archivo,IoTPond4.csv,Population,75.0,75.0,75.0,89844
+Por_Archivo,IoTPond4.csv,Fish_Length(cm),6.94,48.14,17.328843538172144,89843
+Por_Archivo,IoTPond4.csv,Fish_Weight(g),3.07,826.0,70.60380960331241,89844
+Por_Archivo,IoTPond6.csv,Turbidity(NTU),8.0,100.0,98.29319342965445,91015
+Por_Archivo,IoTPond6.csv,Dissolved Oxygen(g/ml),0.007,44.635,10.406378091523376,91015
+Por_Archivo,IoTPond6.csv,PH,-3.13745,9.14634,6.192764617041147,91015
+Por_Archivo,IoTPond6.csv,Ammonia(g/ml),6e-05,inf,inf,91015
+Por_Archivo,IoTPond6.csv,Nitrate(g/ml),89.0,2871.0,931.1266604405868,91015
+Por_Archivo,IoTPond6.csv,Population,75.0,75.0,75.0,91050
+Por_Archivo,IoTPond6.csv,Fish_Length(cm),7.3,48.69,18.605045030203186,91050
+Por_Archivo,IoTPond6.csv,Fish_Weight(g),3.2,786.6,89.08885678198791,91050
+Por_Archivo,IoTPond7.csv,PH,-3.13745,15.45166,5.100048162918614,279612
+Por_Archivo,IoTPond8.csv,Temperature (C),-127.0,30.5,24.922702596686648,70744
+Por_Archivo,IoTPond8.csv,Turbidity(NTU),-56.0,100.0,-0.7820592559086283,70744
+Por_Archivo,IoTPond8.csv,PH,-3.13745,16.23077,3.5554780350277047,70744
+Por_Archivo,IoTPond9.csv,Turbidity(NTU),-57.0,100.0,33.068432322034454,151785
+Por_Archivo,IoTPond9.csv,Dissolved Oxygen(g/ml),0.007,44.98,14.385698007049443,151785
+Por_Archivo,IoTPond9.csv,PH,2.11017,15.45166,6.178923060447343,151785
+Por_Archivo,IoTPond9.csv,Ammonia(g/ml),0.0001,427000000000.0,16180541.309560826,151785
+Por_Archivo,IoTPond9.csv,Nitrate(g/ml),0.0,2269.0,568.7413578416839,151785
